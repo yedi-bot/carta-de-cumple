@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Tía</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="carta">
+
+        <div class="globo g1">🎈</div>
+        <div class="globo g2">🎈</div>
+        <div class="globo g3">🎈</div>
+
+        <h1>🎉 ¡Feliz Cumpleaños! 🎉</h1>
+        <h2>Querida Tía ❤️</h2>
+
+        <div class="decoracion">
+            🌹 💖 🎂 ✨ 🎁 ✨ 💖 🌹
+        </div>
+
+        <p>
+            Hoy es un día muy especial porque celebramos un año más de tu vida.
+            Quiero agradecerte por todo el cariño, los consejos y los momentos
+            tan bonitos que hemos compartido.
+        </p>
+
+        <br>
+
+        <p>
+            Te deseo mucha salud, felicidad, amor y que todos tus sueños se hagan realidad.
+            Que nunca te falten sonrisas, bendiciones y personas que te quieran tanto como tú
+            quieres a los demás.
+        </p>
+
+        <br>
+
+        <p>
+            Disfruta muchísimo este día junto a juan of the jesus.
+            ¡Te mereces lo mejor del mundo!
+            🥳🎂❤️
+        </p>
+
+        <footer>
+            Con mucho cariño, la rata negra ❤️❤️❤️
+        </footer>
+
+    </div>
+</div>
+
+<script>
+const colores = ["#ff4d6d","#ffd60a","#00c853","#2979ff","#ff9100","#9c27b0"];
+
+for(let i=0;i<120;i++){
+    let c=document.createElement("div");
+    c.className="confeti";
+    c.style.left=Math.random()*100+"vw";
+    c.style.background=colores[Math.floor(Math.random()*colores.length)];
+    c.style.animationDuration=(3+Math.random()*5)+"s";
+    c.style.animationDelay=Math.random()*5+"s";
+    document.body.appendChild(c);
+}
+</script>
+
+</body>
+</html>

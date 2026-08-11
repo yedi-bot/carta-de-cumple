@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9ecf,#ffd6e8,#ffe8b3);
+    overflow:hidden;
+}
+.contenedor{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.carta{
+    width:700px;
+    max-width:90%;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+h1{
+    color:#ff2e7a;
+    font-size:42px;
+}
+
+h2{
+    color:#ff5b98;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:20px;
+    color:#444;
+    line-height:1.7;
+}
+
+footer{
+    margin-top:25px;
+    font-size:20px;
+    font-weight:bold;
+    color:#ff2e7a;
+}
+
+.decoracion{
+    font-size:35px;
+    margin:20px 0;
+}
+.globo{
+    position:absolute;
+    font-size:60px;
+    animation:subir 6s ease-in-out infinite;
+}
+
+.g1{
+    left:25px;
+    bottom:-15px;
+}
+
+.g2{
+    right:25px;
+    bottom:-20px;
+    animation-delay:2s;
+}
+
+.g3{
+    left:100px;
+    bottom:-35px;
+    animation-delay:4s;
+}
+
+@keyframes subir{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-25px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.confeti{
+    position:absolute;
+    width:10px;
+    height:10px;
+    top:-10px;
+    animation:caer linear infinite;
+}
+
+@keyframes caer{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+    }
+}
